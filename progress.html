@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress - Joshua's Super Cool Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .nav-bar a:hover {
+            background-color: #555;
+        }
+
+        .progress-container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background-color: #333;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 69%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                red 0%, 
+                orange 14%, 
+                yellow 28%, 
+                green 42%, 
+                blue 56%, 
+                indigo 70%, 
+                violet 84%
+            );
+            background-size: 200% auto;
+            animation: rainbow 5s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        .progress-label {
+            margin-top: 1rem;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sprinkle Sprinkle's Super Gooned Website</h1>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="progress.html">Progress</a>
+        </nav>
+    </header>
+
+    <div class="progress-container">
+        <h2>Current Progress</h2>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="progress-label">Edging Progress: 69%</div>
+    </div>
+
+    <footer style="background-color: #000000; color: white; text-align: center; padding: 1rem; position: fixed; bottom: 0; left: 0; width: 100%;">
+        <p>&#127279; Joshua's Super Cool Website </p>
+    </footer>
+</body>
+</html>
