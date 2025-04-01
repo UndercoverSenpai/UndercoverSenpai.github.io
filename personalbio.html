@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Projects - Joshua's Super Cool Website</title>
+    <title>Personal Bio - Joshua's Super Cool Website</title>
     <style>
         * {
             margin: 0;
@@ -54,11 +54,11 @@
         }
 
         .nav-bar {
-        background-color: #333;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        margin-top: 25px;
-        border-radius: 25px;
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 25px;
+            border-radius: 25px;
         }
 
         .nav-bar a {
@@ -71,25 +71,38 @@
         .nav-bar a:hover {
             background-color: #555;
         }
+        .video-container {
+    margin: 2rem auto;
+    max-width: 640px;
+}
 
+video {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
     <header>
-        <h1>Programming Projects</h1>
+        <h1>Personal Bio</h1>
         <nav class="nav-bar">
-            <a href="index.html">Start Page</a>
+            <a href="index.html">Home</a>
             <a href="personalbio.html">Personal Bio</a>
-            <a href="projects.html">Programming Projects</a>
+            <a href="projects.html">Projects</a>
         </nav>
     </header>
     
     <div class="container">
         <section class="content-section">
-            <div class="project-card">
-                <h2>The website you're on right now!</h2>
-                <p>More programming projects coming soon</p>
+            <div class="video-container">
+                <video width="640" height="360" controls>
+                    <source src="videos/imisstheoldmisato.mp4" type="video/mp4">
+                </video>
             </div>
+            
+            <p>Hello! I'm Joshua (@UndercoverSenpai), a 19 year old college student with an interest in anime, cybersecurity, programming and video games.</p>
         </section>
     </div>
 
