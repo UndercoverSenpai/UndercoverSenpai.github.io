@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Bio - Joshua's Super Cool Website</title>
+    <title>Personal Bio - UndercoverSenpai's Website</title>
     <style>
         * {
             margin: 0;
@@ -16,6 +16,7 @@
             background-color: #000000;
             color: white;
             text-align: center;
+            padding-bottom: 24px;
         }
         
         header {
@@ -70,8 +71,38 @@
 
         .nav-bar a:hover {
             background-color: #555;
-        }
-        
+
+}
+.bio-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 24px;
+    }
+
+    .bio-image {
+        flex: 0 0 auto;
+        padding: 24px;
+    }
+
+    .bio-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .bio-text p {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        max-width: 300px;
+        height: auto;
+        border: 5px solid white;
+        border-radius: 10px;
+    }
     </style>
 </head>
 <body>
@@ -84,14 +115,20 @@
         </nav>
     </header>
     
-    <div class="container">
-        <section class="content-section">
-            <p>Greetigns! My name is Joshua, I am a 19 year old college student who is interested in anime, cybersecurity, programming and video games.</p>
-        </section>
-    </div>
+    <section class="content-section">
+        <div class="bio-container">
+            <div class="bio-image">
+                <img src="images/misato2.jpg" alt="profile picture"> 
+            </div>
+            <div class="bio-text">
+                <p>Greetings and welcome to my website! My name is Joshua (Github username UndercoverSenpai). I am a 19 year old college student who is interested in anime, cybersecurity, programming and video games.</p>
+                <p>This website is designed to host programming projects and other projects I'm working on. Stay tuned for frequent updates to the website's content.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&#127279; Joshua's Super Cool Website </p>
+        <p>&#127279; Undercover Senpai's Website </p>
     </footer>
 </body>
 </html>
