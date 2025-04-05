@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Bio - UndercoverSenpai's Website</title>
     <style>
@@ -15,120 +15,155 @@
         body {
             background-color: #000000;
             color: white;
-            text-align: center;
-            padding-bottom: 24px;
+            display: flex;
         }
-        
-        header {
-            background-color: #000000;
-            color: white;
-            text-align: center;
+
+        .side-nav {
+            background-color: #333;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
             padding: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        .main-content {
+            margin-left: 200px;
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 16px;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0 auto;
         }
 
         .container {
             max-width: 1200px;
-            margin: 2rem auto;
+            margin: 0 auto;
             padding: 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .content-section {
-            margin-bottom: 2rem;
-        }
-
-        footer {
-            background-color: #000000;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
             width: 100%;
-            font-size: 16px;
-        }
-
-        p {
             text-align: center;
+        }
+
+        .content-section p {
             font-size: 24px;
-            margin-top: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .nav-bar {
-            background-color: #333;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            margin-top: 25px;
-            border-radius: 25px;
+        .bio-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 20px 0;
         }
 
-        .nav-bar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
+        .bio-image {
+            flex: 0 0 auto;
+            padding: 24px;
         }
-
-        .nav-bar a:hover {
-            background-color: #555;
-
+        .bio-text {
+    text-align: left;
 }
-.bio-container {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 0 24px;
-    }
-
-    .bio-image {
-        flex: 0 0 auto;
-        padding: 24px;
-    }
-
-    .bio-text {
-        flex: 1;
-        text-align: left;
-    }
 
     .bio-text p {
-        text-align: left;
-        margin-bottom: 1rem;
-    }
+    text-align: left;
+    margin-bottom: 2rem;
+}
 
-    img {
-        max-width: 300px;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 10px;
-    }
+        img {
+            max-width: 400px;
+            height: auto;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Personal Bio</h1>
-        <nav class="nav-bar">
-            <a href="index.html">Start Page</a>
+    <nav class="side-nav">
+        <h2>Navigation</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
             <a href="personalbio.html">Personal Bio</a>
             <a href="projects.html">Projects</a>
-        </nav>
-    </header>
-    
-    <section class="content-section">
-        <div class="bio-container">
-            <div class="bio-image">
-                <img src="images/misato2.jpg" alt="profile picture"> 
-            </div>
-            <div class="bio-text">
-                <p>Greetings and welcome to my website! My name is Joshua (Github username UndercoverSenpai). I am a 19 year old college student who is interested in anime, cybersecurity, programming and video games.</p>
-                <p>This website is designed to host different programming project files and configuration files as I sharpen my skills as a developer. In the future I would love to properly host this website using a VULTR VPS, rewriting and refactoring the code currently on this website while writing a custom backend in PHP.</p>
-            </div>
         </div>
-    </section>
+    </nav>
 
-    <footer>
-        <p>&#127279; Undercover Senpai's Website </p>
-    </footer>
+    <div class="main-content">
+        <header>
+            <h1>Personal Bio</h1>
+        </header>
+        
+        <div class="container">
+            <section class="content-section">
+                <div class="bio-container">
+                    <div class="bio-image">
+                        <img src="images/misato3.webp" alt="Profile Picture">
+                    </div>
+                    <div class="bio-text">
+                        <p>Greetings and thank you for stopping by. My name is UndercoverSenpai, I am a 19 year old college student who is interested in anime, cybersecurity, programming and video games.</p>
+                        <p>This website is designed to host programming projects and other projects I'm working on. Stay tuned for frequent updates to the website's content.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&#127279; UndercoverSenpai's Website </p>
+        </footer>
+    </div>
 </body>
 </html>
